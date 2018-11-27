@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 var ScheduleSchema = new Schema(
   {
     session: [{type: Schema.Types.ObjectId, ref: 'session'}],
-	room: [{type: Schema.Types.ObjectId, ref: 'room'}],
+	roomnumber: [{type: Schema.Types.ObjectId, ref: 'room'}],
 	topic: [{type: Schema.Types.ObjectId, ref: 'topic'}]
 	presenter: [{type: Schema.Types.ObjectId, ref: 'presenter'}]
 );
