@@ -14,7 +14,7 @@ var PresenterSchema = new Schema(
 );
 
 // Virtual for participant's full name
-ParticipantSchema
+PresenterSchema
 .virtual('name')
 .get(function () {
   return this.family_name + ', ' + this.first_name;

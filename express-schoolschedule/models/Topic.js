@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 var TopicSchema = new Schema(
   {
     name: {type: String, required: true, max: 100},
-    description {type: String, required: true, max: 200},
+    description: {type: String, required: true, max: 200},
   }
 );
 

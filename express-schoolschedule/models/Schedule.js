@@ -6,9 +6,9 @@ var ScheduleSchema = new Schema(
   {
     session: [{type: Schema.Types.ObjectId, ref: 'session'}],
 	roomnumber: [{type: Schema.Types.ObjectId, ref: 'room'}],
-	topic: [{type: Schema.Types.ObjectId, ref: 'topic'}]
+	topic: [{type: Schema.Types.ObjectId, ref: 'topic'}],
 	presenter: [{type: Schema.Types.ObjectId, ref: 'presenter'}]
-);
+  });
 
 // Virtual for schedule's URL
 ScheduleSchema
